@@ -1,0 +1,78 @@
+/* General styling */
+body {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Heading styles */
+h1 {
+    color: #004df4;
+    margin-bottom: 20px;
+    font-size: 2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; /* Adjusted margin */
+    border: 3px solid #6e6969;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(211, 205, 205, 0.326);
+    color: #cfd6da;
+    background-color: #0c55a8;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Link styles */
+a {
+    display: inline-block;
+    padding: 10px 30px; /* Adjusted padding */
+    background-color: #0c55a8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin-top: 3px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(239, 234, 234, 0.3);
+}
+a:hover {
+    background-color: #13090c;
+    transform: scale(1.1);
+}
+
+/* Shake animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+/* Apply shake animation on hover */
+.element-to-animate:hover {
+    animation: shake 0.5s ease-in-out;
+}
